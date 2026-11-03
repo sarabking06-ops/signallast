@@ -1,0 +1,77 @@
+@import "tailwindcss";
+@import "@fontsource/vazirmatn/latin-400.css";
+@import "@fontsource/vazirmatn/latin-500.css";
+@import "@fontsource/vazirmatn/latin-600.css";
+@import "@fontsource/vazirmatn/latin-700.css";
+@import "@fontsource/vazirmatn/arabic-400.css";
+@import "@fontsource/vazirmatn/arabic-500.css";
+@import "@fontsource/vazirmatn/arabic-600.css";
+@import "@fontsource/vazirmatn/arabic-700.css";
+
+@theme {
+  --color-bg: #0c0e12;
+  --color-surface: #14171c;
+  --color-elevated: #1c2128;
+  --color-fg: #e7eaee;
+  --color-muted: #9aa3ad;
+  --color-subtle: #6e7882;
+  --color-border: #2a313a;
+  --color-buy: #3f9d72;
+  --color-sell: #d16565;
+  --font-sans: "Vazirmatn", "Segoe UI", tahoma, sans-serif;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled),
+  summary {
+    cursor: pointer;
+  }
+
+  html,
+  body {
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: clip;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-fg);
+    outline-offset: 2px;
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rise-in {
+  animation: rise-in 250ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.progress-fill {
+  transition: width 250ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise-in {
+    animation: none;
+  }
+  .progress-fill {
+    transition: none;
+  }
+}

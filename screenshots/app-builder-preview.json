@@ -1,0 +1,40 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "رادار سوینگ",
+      "hasCanvas": false,
+      "bodyTextLen": 357,
+      "bodyTextHash": "c33479ae4289619572920a1d4099bf1d4dae3054981bc528a33e8d7b04cf802e",
+      "bodyTextPrefix": "اسپات · ۱۰۰ ارز برتر رادار سوینگ بروزرسانی اگر ۶۰ کندل آخر سایه ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "رادار سوینگ",
+      "hasCanvas": false,
+      "bodyTextLen": 357,
+      "bodyTextHash": "c33479ae4289619572920a1d4099bf1d4dae3054981bc528a33e8d7b04cf802e",
+      "bodyTextPrefix": "اسپات · ۱۰۰ ارز برتر رادار سوینگ بروزرسانی اگر ۶۰ کندل آخر سایه ",
+      "horizontalOverflow": false,
+      "consoleErrors": [
+        "A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:\n\n- A server/client branch `if (typeof window !== 'undefined')`.\n- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.\n- Date formatting in a user's locale which doesn't match the server.\n- External changing data without sending a snapshot of it along with the HTML.\n- Invalid HTML tag nesting.\n\nIt can also happen if the client has a browser extension installed which messes with the HTML before React loaded.\n\n%s%s https://react.dev/link/hydration-mismatch \n\n  ...\n    <OutletImpl>\n      <Suspense fallback={null}>\n        <MatchImpl routeId=\"/\">\n          <MatchView router={{...}} match={{id:\"//\",ssr:true, ...}}>\n            <CatchBoundary getResetKey={function getResetKey} errorComponent={function AppErrorComponent} ...>\n              <MatchInnerImpl match={{id:\"//\",ssr:true, ...}}>\n                <Lazy>\n                  <Home>\n                    <Scanner>\n                      <main className=\"mx-auto fl...\">\n                        <header className=\"flex flex-...\">\n                          <div>\n                          <p>\n                          <div className=\"flex flex-...\">\n                            <div>\n                            <label className=\"relative b...\">\n                              <span>\n                              <Search>\n                              <input\n                                value=\"\"\n                                onChange={function onChange}\n                                placeholder=\"جستجوی نماد یا نام\"\n                                className=\"h-11 w-full rounded-lg border border-border bg-surface ps-10 pe-3 text-sm t...\"\n-                               style={{caret-color:\"transparent\"}}\n                              >\n                          ...\n                        ...\n"
+      ],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [
+    "BRAND NOTE: no custom public/og.jpg — the platform will serve the og.grok.me placeholder. Custom cards are the default for games of every kind (DOM board/word games included), whimsical apps, creative tools, and brand-forward pages — only plain utilities (converters, CRUD trackers, admin dashboards) keep the placeholder. If this app is not a plain utility, finish the brand-asset pass per /workspace/.grok/skills/og/SKILL.md."
+  ],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
